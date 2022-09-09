@@ -10,20 +10,11 @@ body {
 #piano {
     height: 290px;
     padding: 90px 30px 0 30px;
-    background-color: #fc8989;
+    background:linear-gradient(to bottom,#fc8989 0%,#972E48 100%);
     border-radius: 10px;
 }
 
 .keys {
-    position: relative;
-
-}
-
-.white-keys {
-    display: flex;
-}
-
-.black-keys {
     position: relative;
     display: flex;
 }
@@ -35,53 +26,72 @@ body {
     border-radius: 0 0 5px 5px;
     border: solid #000 2px;
     box-sizing: border-box;
+    box-shadow:-1px 0 0 rgba(255,255,255,0.8) inset,0 0 5px #ccc inset,0 0 3px rgba(0,0,0,0.2);
+    background:linear-gradient(to bottom,#eee 0%,#fff 100%);
+}
+
+.white-key:active {
+    border: solid #000 1.5px;
+    height: 275px;
+    box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+    background:linear-gradient(to bottom,#fff 0%,#e9e9e9 100%);
 }
 
 .black-key {
     width: 38px;
     height: 160px;
+    border:1px solid #000;
     border-radius: 0 0 5px 5px;
     box-sizing: border-box;
-    position: absolute;
+    box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -5px 2px 3px rgba(0,0,0,0.6) inset,0 2px 4px rgba(0,0,0,0.5);
+    background:linear-gradient(45deg,#222 0%,#555 100%);
     background-color: #000;
+    position: absolute;
 }
 
-.black-key:nth-child(1) {
+.black-key:active {
+    width: 37.5px;
+    height: 159px;
+    box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
+    background:linear-gradient(to right,#444 0%,#222 100%);
+  }
+  
+.black-key:nth-child(2) {
     left: 48px;
 }
 
-.black-key:nth-child(2) {
+.black-key:nth-child(4) {
     left: 117px;
 }
 
-.black-key:nth-child(3) {
-    left: 253px;
-}
-
-.black-key:nth-child(4) {
-    left: 320px;
-}
-
-.black-key:nth-child(5) {
-    left: 389px;
-}
-
 .black-key:nth-child(6) {
-    left: 525px;
-}
-
-.black-key:nth-child(7) {
-    left: 594px;
-}
-
-.black-key:nth-child(8) {
-    left: 662px;
+    left: 186px;
 }
 
 .black-key:nth-child(9) {
+    left: 320px;
+}
+
+.black-key:nth-child(11) {
+    left: 389px;
+}
+
+.black-key:nth-child(14) {
+    left: 525px;
+}
+
+.black-key:nth-child(16) {
+    left: 594px;
+}
+
+.black-key:nth-child(18) {
+    left: 662px;
+}
+
+.black-key:nth-child(21) {
     left: 797px;
 }
 
-.black-key:nth-child(10) {
+.black-key:nth-child(23) {
     left: 865px;
 }
